@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- head definitions go here -->
+        <meta charset="UTF-8">
+        <meta name="viewport",content="width=device-width,initial-scale=1.0" >
+        <title> Student Registartion Form</title>
+
+        <style>
+            body {
+                {% comment %} background-color : saddlebrown; {% endcomment %}
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="POST" novalidate>
+            {% csrf_token %}
+            <table>
+            {{form}}
+            </table>
+            <input type="submit" value="Submit">
+        </form>
+ 
+        
+    </body>
+</html>
